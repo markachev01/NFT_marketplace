@@ -1,0 +1,58 @@
+.header {
+    @include flex();
+
+    width: 100%;
+    height: 5rem;
+
+    background-color: $primary-color;
+}
+
+.mobile-menu{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: all .4s cubic-bezier(.215,.61,.355,1);
+     height: 0vh;
+     background: #2B2B2B;
+     width: 25%;
+     top: 0px;
+     left: 0px;
+     align-items: center;
+     display: flex;
+}
+.burger-menu{
+    display: none;
+   
+}
+.burger-menu span{
+    background: #FFFFFF;
+    width: 18px;
+    height: 1.5px;
+   
+}
+.burger-menu span:after, .burger-menu span::before {
+    content: '';
+    position: absolute;
+    background: #FFFFFF;
+    width: 12.75px;
+    height: 1.5px;
+}
+.burger-menu span:before{
+    margin-top: -4.5px;
+}
+.burger-menu span:after{
+ margin-top: 4.5px;
+}
+.menu-open .mobile-menu{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10000; 
+    height: 100vh;  
+
+}
+.menu-open .mobile-menu .navbar__lists{
+    display: flex;
+    flex-direction: column;
+    
+}
+ 

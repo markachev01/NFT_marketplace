@@ -1,0 +1,106 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 152px;
+    height: 60px;
+
+    background: $secondary-color;
+    border-radius: 20px;
+
+    &:hover {
+        color: $color-white !important;
+
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+
+        @include transition();
+    }
+}
+
+.btns__up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 152px;
+    height: 60px;
+
+    background: $secondary-color;
+    color: $color-white;
+
+    font-size: $font-16;
+    font-weight: $font-w-600;
+    border-radius: 20px;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    cursor: pointer;
+
+    &_hide {
+        display: none;
+    }
+
+    &:hover {
+        color: $color-white !important;
+
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+
+        @include transition();
+    }
+
+
+}
+
+.form__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 420px;
+    height: 60px;
+
+    background: $secondary-color;
+    border-radius: 20px;
+}
+
+.section__btns {
+    background: none;
+
+    border: 2px solid $secondary-color;
+
+    width: 247px;
+    height: 60px;
+
+    &:hover {
+        background: $secondary-color;
+    }
+}
+
+.btn_wallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    background: $gray-darken;
+
+    border: 2px solid $secondary-color;
+    border-radius: 20px;
+
+    width: 320px;
+    height: 72px;
+}

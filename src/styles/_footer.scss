@@ -1,0 +1,48 @@
+.footer {
+    @include flex();
+    @include container();
+     
+    align-items: flex-start;
+
+    margin-top: $m-6;
+
+    &__description {
+
+        @include container();
+
+        
+
+
+        &_title {
+            font-size: $font-12;
+            font-weight: $font-w-400;
+
+            color: $silver;
+
+            margin-top: $m-1;
+            margin-bottom: $m-2;
+        }
+    }
+}
+
+.line {
+    border-top: 2px solid $color-gray;
+
+    width: 1050px;
+}
+
+.navbar__footer {
+    // @include flex();
+
+    &_lists {
+        @include flex-col();
+
+        // margin-left: $m-3;
+
+        gap: 25px;
+    }
+}
+
+.title-footer {
+    padding-left: 0;
+}
